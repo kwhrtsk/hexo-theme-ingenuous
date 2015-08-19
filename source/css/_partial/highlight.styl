@@ -22,6 +22,8 @@ $code-block
   overflow: auto
   color: highlight-foreground
   line-height: font-size * line-height
+  @media mq-mobile
+    padding: 15px mobile-article-padding
 
 $line-numbers
   color: #666
@@ -64,6 +66,9 @@ $line-numbers
       @extend $line-numbers
       text-align: right
       padding-right: 20px
+      @media mq-mobile
+        padding-left: 5px
+        padding-right: 10px
     .line
       height: font-size * line-height
   .gist
