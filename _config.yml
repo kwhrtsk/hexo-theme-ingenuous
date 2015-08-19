@@ -2,6 +2,7 @@
 menu:
   Home: /
   Archives: /archives
+  About: /about
 rss: /atom.xml
 
 # Content
@@ -11,6 +12,7 @@ fancybox: true
 # Sidebar
 sidebar: right
 widgets:
+- about
 - category
 - tag
 - tagcloud
@@ -24,5 +26,12 @@ twitter:
 google_plus:
 fb_admins:
 fb_app_id:
+
+taboutme:
+about:
+  author: true
+  twitter: true
+  aboutme: true
+  description: true
 
 common_keywords:
