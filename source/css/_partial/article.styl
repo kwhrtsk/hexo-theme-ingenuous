@@ -4,6 +4,8 @@
 .article-inner
   @extend $block
   overflow: hidden
+  @media mq-mobile
+    border-width: 1px 0px
 
 .article-meta
   clearfix()
@@ -27,6 +29,8 @@
 
 .article-header
   padding: article-padding article-padding 0
+  @media mq-mobile
+    padding: mobile-article-padding mobile-article-padding 0
 
 .article-title
   text-decoration: none
@@ -43,6 +47,8 @@
   clearfix()
   color: color-default
   padding: 0 article-padding
+  @media mq-mobile
+    padding: 0 mobile-article-padding
   p, table
     line-height: line-height
     margin: line-height 0
