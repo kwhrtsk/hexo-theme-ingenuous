@@ -1,27 +1,36 @@
-# Landscape
+# Ingenuous
 
-A brand new default theme for [Hexo].
+A simple [Hexo](https://hexo.io/) theme for engineering blogs based on a brand new default theme [Landscape](https://github.com/hexojs/hexo-theme-landscape).
 
-- [Preview](http://hexo.io/hexo-theme-landscape/)
+[Demo](http://blog.chopschips.net/)
+
+* Optimized mobile layout that to show more information in narrow display.
+  * Most of changes of layout are intended to fit with engineering blogs.
+* Added shared counts display at each post header.
+* Added Hatena Bookmark(social bookmark service in Japan) button and remove some buttons in share tags.
+* Added about widget to sidebar.
+* Added pagination in archives page.
+* Supported keywords meta tag in front-matter(just for compatibility to octopress: even maybe legacy feature ;-)
+* Removed top banner and modified layout only a little.
 
 ## Installation
 
 ### Install
 
 ``` bash
-$ git clone https://github.com/hexojs/hexo-theme-landscape.git themes/landscape
+$ git clone https://github.com/kwhrtsk/hexo-theme-ingenuous.git themes/ingenuous
 ```
 
-**Landscape requires Hexo 2.4 and above.**
+**Ingenuous requires Hexo 2.4 and above.**
 
 ### Enable
 
-Modify `theme` setting in `_config.yml` to `landscape`.
+Modify `theme` setting in `_config.yml` to `ingenuous`.
 
 ### Update
 
 ``` bash
-cd themes/landscape
+cd themes/ingenuous
 git pull
 ```
 
@@ -32,6 +41,7 @@ git pull
 menu:
   Home: /
   Archives: /archives
+  About: /about
 rss: /atom.xml
 
 # Content
@@ -41,6 +51,7 @@ fancybox: true
 # Sidebar
 sidebar: right
 widgets:
+- about
 - category
 - tag
 - tagcloud
@@ -52,7 +63,35 @@ google_analytics:
 favicon: /favicon.png
 twitter:
 google_plus:
+
+aboutme:
+about:
+  author: true
+  twitter: true
+  aboutme: true
+  description: true
+
+common_keywords:
 ```
+
+These are default values.
+
+If you want to override in your settings, you must add settings to your `_config.yml` like the followings:
+
+```
+theme_config:
+  rss: /feed.xml
+  fancybox: false
+```
+
+**NOT LIKE THIS:**
+
+```
+rss: /feed.xml
+fancybox: false
+```
+
+### Configuration Items
 
 - **menu** - Navigation menu
 - **rss** - RSS link
@@ -64,12 +103,15 @@ google_plus:
 - **favicon** - Favicon path
 - **twitter** - Twiiter ID
 - **google_plus** - Google+ ID
+- **aboutme** - Text to display on about widget
+- **about** - Enable switches for contents in about widget
+- **common_keywords** - Default keywords included in keyword meta tag. (typically, blog title and author)
 
 ## Features
 
 ### Fancybox
 
-Landscape uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
+Ingenuous uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
 
 ```
 ![img caption](img url)
@@ -81,8 +123,9 @@ Landscape uses [Fancybox] to showcase your photos. You can use Markdown syntax o
 
 You can put your sidebar in left side, right side or bottom of your site by editing `sidebar` setting.
 
-Landscape provides 5 built-in widgets:
+Ingenuous provides 6 built-in widgets:
 
+- about
 - category
 - tag
 - tagcloud
@@ -109,3 +152,4 @@ All of them are enabled by default. You can edit them in `widget` setting.
 [Fancybox]: http://fancyapps.com/fancybox/
 [Font Awesome]: http://fontawesome.io/
 [Grunt]: http://gruntjs.com/
+[Landscape]: https://github.com/hexojs/hexo-theme-landscape
