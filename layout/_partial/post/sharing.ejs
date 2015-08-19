@@ -1,0 +1,13 @@
+<div class="article-sharing">
+  <ul>
+    <li>
+      <a href="http://b.hatena.ne.jp/entry/<%- post.permalink %>" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    </li>
+    <li>
+      <a href="http://twitter.com/share" class="twitter-share-button" data-url="<%- post.permalink %>" data-via="{{ theme.twitter }}" data-counturl="<%- post.permalink %>" >Tweet</a>
+    </li>
+    <li>
+      <div class="fb-like" data-send="false" data-layout="button_count" data-show-faces="false" data-font="verdana" data-href="<%- post.permalink %>"></div>
+    </li>
+  </ul>
+</div>

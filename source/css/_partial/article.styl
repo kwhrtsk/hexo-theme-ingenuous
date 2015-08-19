@@ -270,6 +270,17 @@ $article-share-link
   &:hover
     color: #fff
 
+.article-share-hatena
+  @extend $article-share-link
+  &:before
+    content: "B!"
+    font-family: Verdana
+    font-weight: bold
+    line-height: 1
+  &:hover
+    background: #008fde
+    text-shadow: 0 1px darken(#008fde, 20%)
+
 .article-share-twitter
   @extend $article-share-link
   &:before
@@ -355,3 +366,15 @@ $article-gallery-ctrl
   &:before
     content: "\f054"
     right: 15px*/
+
+.article-sharing
+  padding: 10px 4px
+  ul
+    margin: 0px
+    padding: 0px
+    li
+      display: block;
+      float: left !important;
+      margin-right: 10px;
+      list-style-type: none;
+      line-height: 0;
