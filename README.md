@@ -12,6 +12,7 @@ A simple [Hexo](https://hexo.io/) theme for engineering blogs based on a brand n
 * Added pagination in archives page.
 * Supported keywords meta tag in front-matter(just for compatibility to octopress: even maybe legacy feature ;-)
 * Removed top banner and modified layout only a little.
+* Be able to disable searh form by _config.yml.
 
 ## Installation
 
@@ -50,6 +51,10 @@ fancybox: true
 
 # Sidebar
 sidebar: right
+
+# Search form
+search: true
+
 widgets:
 - about
 - category
@@ -98,6 +103,7 @@ fancybox: false
 - **excerpt_link** - "Read More" link at the bottom of excerpted articles. `false` to hide the link.
 - **fancybox** - Enable [Fancybox]
 - **sidebar** - Sidebar style. You can choose `left`, `right`, `bottom` or `false`.
+- **search** - Enable or disable search form.
 - **widgets** - Widgets displaying in sidebar
 - **google_analytics** - Google Analytics ID
 - **favicon** - Favicon path

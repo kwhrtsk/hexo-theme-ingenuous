@@ -11,6 +11,11 @@ fancybox: true
 
 # Sidebar
 sidebar: right
+
+# Search form
+search: true
+
+# Widgets
 widgets:
 - about
 - category
