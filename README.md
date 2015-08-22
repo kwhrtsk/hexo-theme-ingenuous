@@ -6,6 +6,7 @@ A simple [Hexo](https://hexo.io/) theme for engineering blogs based on a brand n
 
 * Optimized mobile layout that to show more information in narrow display.
   * Most of changes of layout are intended to fit with engineering blogs.
+* Added link to scroll to widget in mobile nav.
 * Added shared counts display at each post header.
 * Added Hatena Bookmark(social bookmark service in Japan) button and remove some buttons in share tags.
 * Added about widget to sidebar.
@@ -42,7 +43,6 @@ git pull
 menu:
   Home: /
   Archives: /archives
-  About: /about
 rss: /atom.xml
 
 # Content

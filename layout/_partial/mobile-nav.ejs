@@ -2,4 +2,8 @@
   <% for (var i in theme.menu){ %>
     <a href="<%- url_for(theme.menu[i]) %>" class="mobile-nav-link"><%= i %></a>
   <% } %>
+  <% theme.widgets.forEach(function(widget){ %>
+    <% if (widget == 'archive') { return; } %>
+    <a href="#widget-title-<%- widget %>" style="text-transform: capitalize" class="mobile-nav-link mobile-nav-link-scroll"><%= widget %></a>
+  <% }) %>
 </nav>
