@@ -22,6 +22,12 @@
           </p>
         <% } %>
       <% } else { %>
+        <% if (post.toc){ %>
+          <div class="toc-wrap">
+            <h3> Table of Contents</h3>
+            <%- toc(post.content) %>
+          </div>
+        <% } %>
         <%- post.content %>
       <% } %>
     </div>

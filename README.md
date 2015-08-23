@@ -12,6 +12,7 @@ A simple [Hexo](https://hexo.io/) theme for engineering blogs based on a brand n
 * Added about widget to sidebar.
 * Added pagination in archives page.
 * Supported keywords meta tag in front-matter(just for compatibility to octopress: even maybe legacy feature ;-)
+* Supported TOC(table of contents) insertion to article. (enable in front-matter)
 * Removed top banner and modified layout only a little.
 * Be able to disable searh form by _config.yml.
 
