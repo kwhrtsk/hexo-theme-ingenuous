@@ -145,12 +145,9 @@
       $('#mobile-nav').append(link);
     });
 
-    $('.mobile-nav-link-scroll').smoothScroll({
-      speed: 1500,
-      beforeScroll: function() {
-        //$('#main-nav-toggle').click();
-        $container.removeClass('mobile-nav-on');
-      }
+    $('.mobile-nav-link-scroll').on('click', function(){
+      $container.removeClass('mobile-nav-on');
+      return true;
     });
   })
 })(jQuery);
