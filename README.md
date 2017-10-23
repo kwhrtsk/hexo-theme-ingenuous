@@ -2,7 +2,7 @@
 
 A simple [Hexo](https://hexo.io/) theme for engineering blogs based on a brand new default theme [Landscape](https://github.com/hexojs/hexo-theme-landscape).
 
-[Demo](http://blog.chopschips.net/)
+[Demo](http://chopschips.net/)
 
 * Optimized mobile layout that to show more information in narrow display.
   * Most of changes of layout are intended to fit with engineering blogs.
