@@ -66,6 +66,7 @@ widgets:
 
 # Miscellaneous
 google_analytics:
+google_adsense:
 favicon: /favicon.png
 twitter:
 google_plus:
@@ -107,6 +108,7 @@ fancybox: false
 - **search** - Enable or disable search form.
 - **widgets** - Widgets displaying in sidebar
 - **google_analytics** - Google Analytics ID
+- **google_adsense** - Google Adsense script tags to put into head
 - **favicon** - Favicon path
 - **twitter** - Twiiter ID
 - **google_plus** - Google+ ID
