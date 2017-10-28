@@ -67,6 +67,7 @@ widgets:
 # Miscellaneous
 google_analytics:
 google_adsense:
+google_adsense_article_unit:
 favicon: /favicon.png
 twitter:
 google_plus:
@@ -109,6 +110,7 @@ fancybox: false
 - **widgets** - Widgets displaying in sidebar
 - **google_analytics** - Google Analytics ID
 - **google_adsense** - Google Adsense script tags to put into head
+- **google_adsense_article_unit** - Ad unit code to put on bottom of article
 - **favicon** - Favicon path
 - **twitter** - Twiiter ID
 - **google_plus** - Google+ ID

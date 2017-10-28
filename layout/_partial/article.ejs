@@ -30,6 +30,9 @@
         <% } %>
         <%- post.content %>
       <% } %>
+      <% if (!index) { %>
+        <%- partial('post/google-adsense-unit') %>
+      <% } %>
     </div>
     <footer class="article-footer">
       <% if (page.layout != 'about'){ %>
