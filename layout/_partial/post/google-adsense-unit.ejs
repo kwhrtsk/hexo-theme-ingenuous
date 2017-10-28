@@ -1,6 +1,8 @@
 <% if (theme.google_adsense_article_unit){ %>
 <p>
-  <h5>Sponsored Link</h5>
+  <h5>
+    <%- theme.google_adsense_label || 'Sponsored Links' %>
+  </h5>
   <%- theme.google_adsense_article_unit %>
 </p>
 <% } %>
